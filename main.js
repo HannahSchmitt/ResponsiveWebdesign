@@ -61,8 +61,7 @@ setInterval(() => {
 //Secondsection
 
 const secondsection = document.querySelector(".secondsection");
-const video = secondsection.querySelector("video");
-const text = secondsection.querySelectorAll("h1, h3");
+const text = secondsection.querySelectorAll("h1, h3, h4");
 //END SECTION
 const soursection = document.querySelector(".soursection");
 const end = soursection.querySelectorAll("h1, h3, h4");
