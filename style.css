@@ -10,6 +10,7 @@ html{
     font-size: 10px;
     font-family: 'SF Pro Display', sans-serif;
 }
+
 a{
     display: block;
     text-decoration: none;
@@ -226,21 +227,30 @@ header{
   
   .secondsection h1{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 2340%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    font-size: 80px;
-    color: rgb(0, 0, 0);
+    font-size: 60px;
+    color: rgb(255, 255, 255);
   }
   
   .secondsection h3{
     position: absolute;
-    top: 58%;
+    top: 2375%;
+    left: 50%;
+    transform: translate(-85%, -50%);
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+  }
+  .secondsection h4{
+    position: absolute;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
     font-weight: 100;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 
   /*secondsectionende*/
