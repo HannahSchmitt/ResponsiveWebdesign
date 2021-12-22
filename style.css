@@ -334,9 +334,9 @@ header{
 }
 
 .nahHimbeere h1{
-    position: absolute;
-    top: 2650%;
-    left: 45%;
+    position: relative;
+    top: -50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     font-size: 80px;
     font-weight: 600;
@@ -346,13 +346,65 @@ header{
 }
 
 .nahHimbeere img{
-    top: 50vh;
+    position: relative;
+    top: 50%;
     width: 100%;
-   
 }
 
 /* Ende nah Himbeere*/
-  
+
+/*Anfang lookcloser*/
+.lookcloser{
+    height: 100vh;
+    background: #000;
+}
+
+.lookcloser img{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    height: 80%;
+}
+
+.lookcloser h3{
+    position: relative;
+    top: -60%;
+    left: 30%;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+}
+
+.lookcloser h4{
+    position: relative;
+    top: -60%;
+    left: 30%;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(255, 230, 0);
+}
+
+.lookcloser2 h3{
+    position: relative;
+    top: -60%;
+    left: 30%;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+}
+
+.lookcloser2 h4{
+    position: relative;
+    top: -60%;
+    left: 30%;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(255, 230, 0);
+}
+
+
+/*Ende lookcloser*/
+  /*
   section {
     height: 100vh;
     color: black;
@@ -368,7 +420,7 @@ header{
     text-align: center;
     font-size: 80px;
   }
-  
+  */
 
 /*ende*/
 
