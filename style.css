@@ -220,16 +220,16 @@ header{
   }
   
   .secondsection video{
-    height: 120%;
+    height: 130%;
     width: 100%;
     object-fit: cover;
   }
   
   .secondsection h1{
-    position: absolute;
-    top: 2340%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: -110%;
+    left: 10%;
+    /*transform: translate(-50%, -50%);*/
     font-size: 80px;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -238,10 +238,10 @@ header{
   }
 
    .secondsection h2{
-    position: absolute;
-    top: 2390%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: -100%;
+    left: 10%;
+    /*transform: translate(-50%, -50%);*/
     font-size: 80px;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -250,13 +250,15 @@ header{
   }
 
   .secondsection h3{
-    position: absolute;
-    top: 2407%;
-    left: 55%;
-    transform: translate(-100%, -50%);
+    position: relative;
+    top: -90%;
+    left: 10%;
+    /*transform: translate(-100%, -50%);*/
     font-size: 24px;
     font-weight: 100;
     color: rgb(255, 255, 255);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
   }
  
 
@@ -268,10 +270,10 @@ header{
       height: 100vh;
   }
 
-  .soursection img{
-      height: 100%;
+  .soursection video{
       width: 100%;
-      margin-top: -25%;
+      padding-top: 30%;
+      object-fit: cover;
   }
 
   .soursection h1{
@@ -331,6 +333,7 @@ header{
 /*Anfang nah Himbeere*/
 .nahHimbeere{
     height: 100vh;
+    background-color: #000;
 }
 
 .nahHimbeere h1{
@@ -340,7 +343,7 @@ header{
     transform: translate(-50%, -50%);
     font-size: 80px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     line-height: 1.05;
     letter-spacing: -0.05em;
 }
