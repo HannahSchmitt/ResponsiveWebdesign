@@ -47,7 +47,9 @@ let scrollpos = 0;
 let delay = 0;
 
 scene.on("update", e => {
+  console.log(e.scrollpos);
   scrollpos = e.scrollPos / 1000;
+  console.log(e.scrollpos);
 });
 
 setInterval(() => {
@@ -57,7 +59,51 @@ setInterval(() => {
   video.currentTime = delay;
 }, 33.3);
 
+/********NEW SECTION*******/
+/*Soursection*/
+const soursection = document.querySelector(".soursection");
+const handvideo = document.querySelector(".handvideo");
+
+//END SECTION
+const mgsection = document.querySelector(".mgsection");
+
+//SCROLLMAGIC
+const controller2 = new ScrollMagic.Controller();
+
+//Scenes
+let scenesoursection = new ScrollMagic.Scene({ /*Scene stehen lassen !! wird aus ScrollMagic genommen*/
+  duration: 1000, /*(wieviele Pixel ich scrollen möchte)*/
+  triggerElement: soursection,
+  triggerHook: 0 /*Wann die Animation anfängt*/
+})
+  .addIndicators()
+  .setPin(soursection)
+  .addTo(controller2);
+
+
+
+//Video Animation
+let handaccelamount = 0.1; /*Am Schluss wird es sich noch ein bisschen bewegen*/
+let handscrollpos = 0; /*handScrollPosition*/
+let handdelay = 0; 
+
+console.log(handscrollpos, handdelay);
+
+scenesoursection.on("update", e => {
+  console.log(e);
+  handscrollpos = e.scrollPos / 1000;
+  console.log(e.handscrollPos);
+});
+
+setInterval(() => {
+  handdelay += (handscrollpos - handdelay) * handaccelamount; /* handDelay hinzufügen, wenn wir scrollen*/
+  console.log(handscrollpos, handdelay);
+
+  handvideo.currentTime = handdelay;
+}, 33.3); /*100 / 30 (Frames) = 33.3 // oder // 1000 / 24 (Frames) = 41,6
+
 /*
+
 //Secondsection
 
 const secondsection = document.querySelector(".secondsection");
@@ -67,31 +113,31 @@ const soursection = document.querySelector(".soursection");
 const end = soursection.querySelectorAll("h1, h3, h4");
 
 //SCROLLMAGIC
-const controller = new ScrollMagic.Controller();
+const controller2 = new ScrollMagic.Controller();
 
 //Scenes
-let scenesecondsection = new ScrollMagic.Scenesecondsection({
+let scenesecondsection = new ScrollMagic.Scene({
   duration: 18000,
   triggerElement: secondsection,
   triggerHook: 0
 })
   .addIndicators()
   .setPin(secondsection)
-  .addTo(controller);
+  .addTo(controller2);
 
 
-/*Text Animation
+//Text Animation
 const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
-let scenesecondsection2 = new ScrollMagic.Scenesecondsection2({
+let scenesecondsection2 = new ScrollMagic.Scene({
   duration: 3000,
   triggerElement: secondsection,
   triggerHook: 0
 })
   .setTween(textAnim)
-  .addTo(controller);
-  */
- /*
+  .addTo(controller2);
+  
+ 
 
 //Video Animation
 let accelamount = 0.1;
@@ -107,4 +153,6 @@ setInterval(() => {
   console.log(scrollpos, delay);
 
   video.currentTime = delay;
-}, 33.3);*/
+}, 33.3);
+
+*/

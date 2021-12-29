@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 html{
     font-size: 10px;
     font-family: 'SF Pro Display', sans-serif;
@@ -75,7 +76,52 @@ header{
     background: url("images/icons/bag.svg") center no-repeat;
 }
 
-/*iPhone 11 Pro section*/
+/* CTA Menü*/
+.container2{
+    position: fixed;
+    top: 4;
+    z-index: 1000;
+    width: 100%;
+    height: 4.4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.nav-list-cta{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20rem;
+}
+.nav-list-cta-mobile{
+    display: none; /*Burger Menü einfügen*/
+}
+.nav2-link{
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    padding: 0 10rem;
+    transition: opacity .5s;
+}
+.nav2-link:hover{
+    opacity: .7;
+}
+
+.nav2-cta{
+    background-color: #006dc7; /* Apple Blau */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11.5px;
+    border-radius: 30px;
+}
+.nav2-cta:hover{
+    background-color: #0e7ad3;
+}
+
+
+/*iPhone 11 Pro section
 
 .iphone-11-pro{
     background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
@@ -136,7 +182,7 @@ header{
 .title-dark{
     color: #000;
 }
-
+/*
 .cta-link-darker{
     color: #0070c9;
 }
@@ -144,7 +190,7 @@ header{
 .cta-link-darker:hover{
     border-bottom-color: #0070c9;
 }
-
+*/
 .watch{
     background: url("images/hero/watch/watch_large.jpg") center no-repeat;
 }
@@ -174,11 +220,13 @@ header{
 
 
 /*anfang*/
+/*Vorerst gelöscht (Lücken zwischen Boxen)
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  */
   
   body {
     font-family: sans-serif;
@@ -191,14 +239,14 @@ header{
   .intro video{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /*(Video wird auf die ganze Breite gezogen)*/
   }
   
   .intro h1{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*(genau in die Mitte)*/
     font-size: 80px;
     color: rgb(0, 0, 0);
   }
@@ -216,18 +264,18 @@ header{
   /*secondsection*/
 
   .secondsection{
-    height: 100vh;
+    height: 130vh;
   }
   
   .secondsection video{
-    height: 130%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
   
   .secondsection h1{
     position: relative;
-    top: -110%;
+    top: -80%;
     left: 10%;
     /*transform: translate(-50%, -50%);*/
     font-size: 80px;
@@ -239,7 +287,7 @@ header{
 
    .secondsection h2{
     position: relative;
-    top: -100%;
+    top: -75%;
     left: 10%;
     /*transform: translate(-50%, -50%);*/
     font-size: 80px;
@@ -251,7 +299,7 @@ header{
 
   .secondsection h3{
     position: relative;
-    top: -90%;
+    top: -70%;
     left: 10%;
     /*transform: translate(-100%, -50%);*/
     font-size: 24px;
@@ -272,7 +320,6 @@ header{
 
   .soursection video{
       width: 100%;
-      padding-top: 30%;
       object-fit: cover;
   }
 
@@ -289,15 +336,14 @@ header{
 
 /* begin mg section*/
 
-.mg{
+.mgsection{
     height: 100vh;
 }
 
-.mg img{
-    height: 100%;
+.mgsection video{
+    position: relative;
     width: 100%;
-    background: transparent;
-    background: black;
+    object-fit: cover;
 }
 
 .mg h1{
@@ -335,7 +381,10 @@ header{
     height: 100vh;
     background-color: #000;
 }
-
+.nahHimbeere video{
+    width: 100%;
+    object-fit: cover;
+}
 .nahHimbeere h1{
     position: relative;
     top: -50%;
@@ -343,7 +392,7 @@ header{
     transform: translate(-50%, -50%);
     font-size: 80px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     line-height: 1.05;
     letter-spacing: -0.05em;
 }
@@ -387,7 +436,72 @@ header{
     color: rgb(255, 230, 0);
 }
 
+/*Ende lookcloser*/
 
+/*Anfang CTA */
+.cta{
+    height: 100vh;
+    background: rgb(228, 228, 228); /*Beige Rahmen*/
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+.cta img{
+    position: relative;
+    height: 50%;
+    left: 5%;
+    top: 35%
+}
+
+.cta-link{
+    background-color: rgb(0, 109, 199); /* Apple Blau */
+    border: none;
+    color: white;
+    padding: 19px 25px;
+    text-align: center;
+    /*text-decoration: none;*/
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 30px;
+    position: relative;
+    left: 25%;
+    top: 30%;
+
+}
+
+.cta-link:hover{
+    background-color: #0e7ad3;
+}
+
+.cta h1, h2, h3, h4{
+    position: relative;
+    left: 70%;
+    top: -20%;
+}
+
+.cta h3{
+    color: rgb(107, 9, 9);
+    
+}
+/*
+.cta-link{
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}*/
+/*
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
+}
+.cta-link-darker{
+    color: #0070c9;
+}
+
+.cta-link-darker:hover{
+    border-bottom-color: rgb(0, 109, 199);
+} */
+/* Ende CTA*/
 
 /*Ende lookcloser*/
   /*
@@ -410,7 +524,30 @@ header{
 
 /*ende*/
 
-/*end*/
+footer{
+    height: 50vh;
+    background-color: rgb(228, 228, 228);
+}
+
+footer table, th, td{
+    border: none;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: left;
+    font-size: 1em;
+    left: 80%;
+    margin: o auto;
+    padding: 0 22px;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-left));;
+}
+footer th{
+    font-weight: 200;
+}
+
+footer table, td{
+    font-weight: 100;
+}
 
 @media screen and (max-width: 1068px){
     .iphone-11-pro{
@@ -484,6 +621,18 @@ header{
 
     .nav-item-hidden{
         display: none;
+    }
+
+    /*cta nav*/
+    .nav2-item{
+        width: 4.8rem;
+        height: 8.8rem;
+        display: flex;
+        justify-content: right;
+    }
+
+    .nav2-item-hidden{
+        display: none; /*Burger Menu*/
     }
 
     .mobile-menu{
@@ -592,6 +741,21 @@ header{
     }
 
     .active .nav-list-larger .nav-item{
+        animation: fadeIn Is ease-in;
+    }
+
+    /*nav 2*/
+    .nav-list-cta-larger .nav2-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgb(255, 255, 255, .1);
+    }
+
+    .nav-list-cta-larger .nav2-item:nth-child(9){
+        border-bottom: none;
+    }
+
+    .active .nav-list-cta-larger .nav2-item{
         animation: fadeIn Is ease-in;
     }
 
