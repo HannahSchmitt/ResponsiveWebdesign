@@ -60,6 +60,7 @@ setInterval(() => {
 }, 33.3);
 
 /********NEW SECTION*******/
+  console.log("start");
 /*Soursection*/
 const soursection = document.querySelector(".soursection");
 const handvideo = document.querySelector(".handvideo");
@@ -83,29 +84,31 @@ let scenesoursection = new ScrollMagic.Scene({ /*Scene stehen lassen !! wird aus
 
 
 //Video Animation
-let handaccelamount = 0.1; /*Am Schluss wird es sich noch ein bisschen bewegen*/
+let handaccelamount = 3.1; /*Am Schluss wird es sich noch ein bisschen bewegen*/
 let handscrollpos = 0; /*handScrollPosition*/
 let handdelay = 0; 
 
 console.log(handscrollpos, handdelay);
 
 scenesoursection.on("update", e => {
-  console.log(e);
+  console.log("startVideo2");
   handscrollpos = e.scrollPos / 1000;
   console.log(e.handscrollPos);
 });
 
 setInterval(() => {
+  console.log("startVideo34");
   handdelay += (handscrollpos - handdelay) * handaccelamount; /* handDelay hinzufügen, wenn wir scrollen*/
   console.log(handscrollpos, handdelay);
 
   handvideo.currentTime = handdelay;
-}, 33.3); /*100 / 30 (Frames) = 33.3 // oder // 1000 / 24 (Frames) = 41,6
+}, 33.3); /*100 / 30 (Frames) = 33.3 // oder // 1000 / 24 (Frames) = 41,6*/
 
-/*
+
+
 
 //Secondsection
-
+/*
 const secondsection = document.querySelector(".secondsection");
 const text = secondsection.querySelectorAll("h1, h3, h4");
 //END SECTION
