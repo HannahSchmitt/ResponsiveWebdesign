@@ -261,6 +261,11 @@ header{
     color: rgb(0, 0, 0);
   }
 
+  /*divide1*/
+  .divide1{
+      height: 4%;
+      color: beige;
+  }
   /*secondsection*/
 
   .secondsection{

@@ -13,7 +13,7 @@ const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelectorAll("h1, h3");
 //END SECTION
-const secondsection = document.querySelector(".secondsection");
+const secondsection = document.querySelector(".divide1");
 const end = secondsection.querySelectorAll("h1, h3");
 
 //SCROLLMAGIC
@@ -21,7 +21,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 3400,
+  duration: 16000, /*3400*/
   triggerElement: intro,
   triggerHook: 0
 })
