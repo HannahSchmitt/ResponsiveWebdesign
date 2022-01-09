@@ -7,8 +7,6 @@ selectElement('.mobile-menu').addEventListener('click',() => {
 
 
 
-
-
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelectorAll("h1, h3");
