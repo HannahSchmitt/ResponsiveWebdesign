@@ -8,7 +8,12 @@ selectElement('.mobile-menu').addEventListener('click',() => {
 
 
 const intro = document.querySelector(".intro");
-const video = intro.querySelector("video");
+let video;
+if (window.outerWidth <= 750) {video = intro.querySelector("video#mobil");
+} else if (window.outerWidth > 750) {video = intro.querySelector("video#desktop");}
+
+console.log(video);
+
 const text = intro.querySelectorAll("h1, h3");
 //END SECTION
 const secondsection = document.querySelector(".divide1");
@@ -19,7 +24,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 16000, /*3400*/
+  duration: 20200, /*3400*/
   triggerElement: intro,
   triggerHook: 0
 })
