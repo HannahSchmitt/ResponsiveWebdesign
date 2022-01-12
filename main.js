@@ -9,8 +9,8 @@ selectElement('.mobile-menu').addEventListener('click',() => {
 
 const intro = document.querySelector(".intro");
 let video;
-if (window.outerWidth <= 750) {video = intro.querySelector("video#mobil");
-} else if (window.outerWidth > 750) {video = intro.querySelector("video#desktop");}
+if (window.outerWidth <= 768) {video = intro.querySelector("video#mobil");
+} else if (window.outerWidth > 768) {video = intro.querySelector("video#desktop");}
 
 console.log(video);
 
@@ -107,7 +107,9 @@ setInterval(() => {
   handvideo.currentTime = handdelay;
 }, 33.3); /*100 / 30 (Frames) = 33.3 // oder // 1000 / 24 (Frames) = 41,6*/
 
-
+window.onresize = function() {
+  location.reload();
+}
 
 
 //Secondsection
