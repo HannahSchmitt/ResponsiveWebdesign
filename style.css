@@ -84,7 +84,7 @@ a{
 .secondnav{
     position: fixed;
     top: 44px;
-    z-index: 1000;
+    z-index: 0;
     width: 100%;
     height: 4.8rem;
     background-color: rgba(255, 255, 255, 0.900);
@@ -769,7 +769,7 @@ Ende lookcloser*/
     header .container{
         padding: 0;
     }
-
+/*
     .secondnav{
         display: none;
     }
@@ -823,7 +823,7 @@ Ende lookcloser*/
     .sub-navmobil{
         float: right;
     }
-
+*/
     .intro video#mobil {
         height: 100%;
         width: 100%;
@@ -997,6 +997,7 @@ Ende lookcloser*/
     }
 
     /*nav 2*/
+    /*
     .nav-list-cta-larger .nav2-item{
         width: 100%;
         justify-content: flex-start;
@@ -1015,7 +1016,7 @@ Ende lookcloser*/
         padding: 0;
         margin: auto 0;
     }
-
+*/
     @keyframes fadeIn {
         from{
             opacity: 0;
@@ -1112,6 +1113,7 @@ Ende lookcloser*/
 @media screen and (max-width: 735px){
 
 /*untere Navigation*/
+/*
 .secondnav{
     display: none;
 }
@@ -1165,7 +1167,7 @@ Ende lookcloser*/
 .sub-navmobil{
     float: right;
 }
-
+*/
 /*Intro Video Mobil*/
 
     .intro video#mobil {
