@@ -22,6 +22,7 @@ header{
     background-color: hsla(0, 0%, 0%, 0.900);
     backdrop-filter: blur(2rem);
 }
+
 .container {
     max-width: 98rem;
     margin: 0 auto;
@@ -35,6 +36,10 @@ a{
 
 .a:hover{
     color: #006dc7;;
+}
+
+.sub-nav a:hover{
+    color: #006dc7;
 }
 
 /*obere Navigation*/
@@ -151,7 +156,7 @@ a{
     color: white;
     padding: 5px 10px;
     text-align: center;
-    text-decoration: none;
+    /*text-decoration: none;*/
     display: inline-block;
     font-size: 11.5px;
     border-radius: 30px;
@@ -326,6 +331,10 @@ a{
     color: #006dc7;
 }
 
+.cta-learnmore:hover{
+    text-decoration: underline;
+}
+
 .cta-link:hover{
     background-color: #0e7ad3;
 }
@@ -347,8 +356,12 @@ footer table, th, td{
     padding: 0 22px;
     padding-left: max(30px, env(safe-area-inset-left));
     padding-right: max(30px, env(safe-area-inset-left));;
-
 }
+
+.footer th:hover, td:hover{
+    text-decoration: underline;
+}
+
 footer th{
     color: rgba(0, 0, 0, 0.664);
 }
@@ -719,17 +732,13 @@ Ende lookcloser*/
 
 /*ende*/
 @media screen and (max-width: 3000px){
-    .secondnavmobil{
-        display: none;
-    }
+
 }
     
 
 @media screen and (max-width: 1068px){
 
-    .secondnavmobil{
-        display: none;
-    }
+
     .hero{
         height: 65rem;
         background-size: auto 69.8rem;
@@ -765,65 +774,9 @@ Ende lookcloser*/
         transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),
                     height .56 cubic-bezier(0.32, 0.08, 0.24, 1);
     }
-
-    header .container{
-        padding: 0;
-    }
-/*
-    .secondnav{
+    #dontshow{
         display: none;
     }
-    .secondnavmobil{
-        position: fixed;
-        top: 49px;
-        z-index: 100;
-        width: 100%;
-        height: 4.8rem;
-        background-color: rgba(255, 255, 255, 0.900);
-        border-bottom-color: grey;
-        border-bottom: solid 0.05em;
-    }
-    
-    .secondnavmobil div.sub-navmobil{
-        display: inline-block;
-        margin-top: 15px;
-        color: rgb(0, 0, 0);
-    }
-    
-    .secondnavmobil div.headlineiRaspmobil{
-        display: inline-block;
-        margin-top: 10px;
-        color: rgb(0, 0, 0);
-    }
-    
-    .secondnavmobil div.headlineiRaspmobil h1{
-        color:rgb(0, 0, 0);
-        font-size: 2.5em;
-        font-weight: 400;
-    }
-    
-    .sub-navmobil li{
-        display: inline-block;
-        padding-right: 10px;
-        font-size: 1.2rem;
-        color: rgb(0, 0, 0);
-        font-weight: 200;
-        margin-right: 5%;
-    }
-    
-    .sub-navmobil li:hover{
-        opacity: .7;
-        color: #006dc7;
-    }
-    
-    .sub-navmobil li:last-child{
-        padding-right: 0px;
-    }
-    
-    .sub-navmobil{
-        float: right;
-    }
-*/
     .intro video#mobil {
         height: 100%;
         width: 100%;
@@ -834,27 +787,17 @@ Ende lookcloser*/
     #desktop{
         display: none;
     }
-      
-    /*  .intro h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /*(genau in die Mitte)
-        font-size: 80px;
-        color: rgb(0, 0, 0);
-      }
-      
-      .intro h3{
-        position: absolute;
-        top: 58%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 50px;
-        font-weight: 100;
-        color: rgb(0, 0, 0);
-      }
-*/
- 
+
+    .secondnav{
+        position: fixed;
+        top: 48px;
+        z-index: 0;
+        width: 100%;
+        height: 4.8rem;
+        background-color: rgba(255, 255, 255, 0.900);
+        border-bottom-color: grey;
+        border-bottom: solid 0.05em;
+    }
 
     .nav-list{
         margin-top: 0;
@@ -875,18 +818,6 @@ Ende lookcloser*/
         display: none;
     }
 
-    /*cta nav*/
-    .nav2-item{
-        width: 4.8rem;
-        height: 8.8rem;
-        display: flex;
-        justify-content: right;
-    }
-
-    .nav2-item-hidden{
-        display: none; /*Burger Menu*/
-    }
-
     .mobile-menu{
         position: relative;
         z-index: 1800;
@@ -897,39 +828,6 @@ Ende lookcloser*/
         align-items: center;
         justify-content: center;
         cursor: pointer;
-    }
-
-    .line{
-        position: absolute;
-        width: 1.7rem;
-        height: 1px;
-        background-color: #fff;
-        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-    }
-
-    .line-top{
-        margin-top: 3px;
-    }
-
-    .line-bottom{
-        margin-top: -.4rem;
-    }
-
-    .active .line-top{
-        margin-top: 0;
-        transform: rotate(45deg);
-        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-    }
-
-    .active .line-bottom{
-        margin-top: 0;
-        transform: rotate(-45deg);
-        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-    }
-
-    header.active{
-        height: 100%;
-        background-color: #000;
     }
 
     .nav-link-apple{
@@ -1112,62 +1010,9 @@ Ende lookcloser*/
 
 @media screen and (max-width: 735px){
 
-/*untere Navigation*/
-/*
-.secondnav{
-    display: none;
-}
-.secondnavmobil{
-    position: fixed;
-    top: 49px;
-    z-index: 100;
-    width: 100%;
-    height: 4.8rem;
-    background-color: rgba(255, 255, 255, 0.900);
-    border-bottom-color: grey;
-    border-bottom: solid 0.05em;
-}
-
-.secondnavmobil div.sub-navmobil{
-    display: inline-block;
-    margin-top: 15px;
-    color: rgb(0, 0, 0);
-}
-
-.secondnavmobil div.headlineiRaspmobil{
-    display: inline-block;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
-}
-
-.secondnavmobil div.headlineiRaspmobil h1{
-    color:rgb(0, 0, 0);
-    font-size: 2.5em;
-    font-weight: 400;
-}
-
-.sub-navmobil li{
-    display: inline-block;
-    padding-right: 10px;
-    font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    font-weight: 200;
-    margin-right: 5%;
-}
-
-.sub-navmobil li:hover{
-    opacity: .7;
-    color: #006dc7;
-}
-
-.sub-navmobil li:last-child{
-    padding-right: 0px;
-}
-
-.sub-navmobil{
-    float: right;
-}
-*/
+    .secondnav{
+        position: sticky;
+    }
 /*Intro Video Mobil*/
 
     .intro video#mobil {
@@ -1209,48 +1054,18 @@ Ende lookcloser*/
         background-color: #0e7ad3;
     }
     .wrapper-absolute h1{
-        font-size: 60px;
+        font-size: 55px;
         color: rgb(0, 0, 0);
         text-align: center;
         }
         
     .wrapper-absolute h3{
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 25px;
+    font-weight: 300;
     text-align: center;
     color: rgb(0, 0, 0);
     }
-/*
-    .intro h1{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /*(genau in die Mitte)
-        font-size: 50px;
-        color: rgb(0, 0, 0);
-      }
       
-      .intro h3{
-        position: absolute;
-        top: 58%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 30px;
-        font-weight: 100;
-        color: rgb(0, 0, 0);
-      }
-      */
-    .iphone-11-pro{
-        background: url("images/hero/iphone-11-pro/iphone_11_pro_small.jpg");
-    
-        }
-    .iphone-11{
-        background: url("images/hero/iphone-11/iphone_11_small.jpg");
-    
-        }
-    .watch{
-        background: url("images/hero/watch/watch_small.jpg");
-    
         }
 
     .hero{

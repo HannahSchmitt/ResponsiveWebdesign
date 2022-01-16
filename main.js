@@ -6,7 +6,6 @@ selectElement('.mobile-menu').addEventListener('click',() => {
 });
 
 
-
 const intro = document.querySelector(".intro");
 let video;
 if (window.outerWidth <= 768) {video = intro.querySelector("video#mobil");
@@ -24,7 +23,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 20200, /*3400*/
+  duration: 22600, /*3400*/
   triggerElement: intro,
   triggerHook: 0
 })
@@ -37,7 +36,7 @@ let scene = new ScrollMagic.Scene({
 const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-  duration: 3400,
+  duration: 3600,
   triggerElement: intro,
   triggerHook: 0
 })
