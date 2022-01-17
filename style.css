@@ -16,7 +16,7 @@ body {
 header{
     position: fixed;
     top: 0;
-    z-index: 1400;
+    z-index: 2400;
     width: 100%;
     height: 4.4rem;
     background-color: hsla(0, 0%, 0%, 0.900);
@@ -89,7 +89,7 @@ a{
 .secondnav{
     position: fixed;
     top: 44px;
-    z-index: 0;
+    z-index: 1000;
     width: 100%;
     height: 4.8rem;
     background-color: rgba(255, 255, 255, 0.900);
@@ -151,7 +151,7 @@ a{
 }
 
 .nav2-cta{
-    background-color: #006dc7; 
+    background-color: #006dc7;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -161,8 +161,10 @@ a{
     font-size: 11.5px;
     border-radius: 30px;
 }
+
 .nav2-cta:hover{
-    background-color: #0e7ad3;
+    background-color: #1274c4;
+    color: white;
 }
 
   .intro{
@@ -413,282 +415,6 @@ footer table, td{
 .footerextra2{
     padding-bottom: 50px;
 }
-
-  /*secondsectionende*/
-
-
-/* CTA Menü*/
-
-/*
-.nav2{
-    position: fixed;
-    top: 4px;
-    z-index: 1000;
-    width: 100%;
-    height: 4.8rem;
-    background-color: rgba(255, 255, 255, 0.900);
-    border-bottom-color: grey;
-    border: solid 0.05em;
-}
-.nav-list-name{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 200;
-    padding-top: 10px;
-}
-.nav-list-cta{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 0rem;
-}
-.nav-list-cta-mobile{
-    display: none; /*Burger Menü einfügen
-}
-*/
-/*
-nav-list-cta-larger{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.title{
-    color: #fff;
-    text-align: center;
-    padding-top: 5.5rem;
-}
-.title-heading{
-    font-size: 5.6rem;
-    line-height: 1.07143;
-    letter-spacing: -.005rem;
-}
-.title-sub-heading{
-    font-size: 2.65rem;
-    margin-top: .6rem;
-    letter-spacing: .008rem;
-    font-weight: 400;
-}
-.title-price{
-    font-size: 1.7rem;
-    color: #888;
-    margin-top: .68rem;
-}
-
-.nav2{
-    position: sticky;
-    top:0;
-}
-.
-/*iPhone 11 Pro section
-.iphone-11-pro{
-    background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
-    margin-top: 4.4rem;
-}
-
-.cta{
-    text-align: center;
-    margin-top: 1.8rem;
-}
-.cta-link{
-    color: #66bbff;
-    font-size: 2.1rem;
-    display: inline-block;
-}
-.cta-link:nth-child(2){
-    margin-left: 2.6rem;
-}
-.cta-link:hover{
-    border-bottom: 2px solid #66bbff;
-}
-/*iPhone 11 section*/
-
-
-/*
-.cta-link-darker{
-    color: #0070c9;
-}
-.cta-link-darker:hover{
-    border-bottom-color: #0070c9;
-}
-/*Moved to bottom of all section styles to keep consistent styles
-.hero{
-    height: 69.2rem;
-    background-size: auto 73.6rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: .6rem solid #fff;
-    border-bottom: .6rem solid #fff;
-}
-.iphone-11-pro{
-    border-top: none;
-}
-*/
-/*anfang*/
-/*Vorerst gelöscht (Lücken zwischen Boxen)
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  */
-  
-  /*begin soursection
-  .soursection{
-      height: 100vh;
-      position: relative;
-  }
-  .soursection video{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-  .soursection h1{
-    top: 60%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    font-size: 108px;
-    color: rgb(0, 0, 0);
-  }
-ende soursection*/
-
-/* begin mg section
-.mgsection{
-    height: 100vh;
-}
-.mgsection video{
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-}
-.mg h1{
-    position: relative;
-    top: 10%;
-    left: 15%;
-    font-size: 508px;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: black;
-}
-.mg h3{
-    position: relative;
-    top: 0%;
-    left: 37%;
-    font-size: 30px;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: black;
-}
-.mg h4{
-    position: relative;
-    top: 30%;
-    left: 37%;
-    font-size: 30px;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: black;
-}
-ende mg section*/
-
-/*Anfang nah Himbeere
-.nahHimbeere{
-    height: 100vh;
-    background-color: #000;
-}
-.nahHimbeere video{
-    width: 100%;
-    object-fit: cover;
-}
-.nahHimbeere h1{
-    position: relative;
-    top: -50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    line-height: 1.05;
-    letter-spacing: -0.05em;
-}
-.nahHimbeere img{
-    position: relative;
-    top: 50%;
-    width: 100%;
-}
-Ende nah Himbeere*/
-
-/*Anfang lookcloser
-.lookcloser{
-    height: 100vh;
-    background: #000;
-}
-.lookcloser img{
-    position: relative;
-    top: 30%;
-    left: 50%;
-    height: 80%;
-}
-.lookcloser h3{
-    position: relative;
-    top: -60%;
-    left: 30%;
-    font-size: 30px;
-    font-weight: 100;
-    color: white;
-}
-.lookcloser h4{
-    position: relative;
-    top: -60%;
-    left: 30%;
-    font-size: 30px;
-    font-weight: 100;
-    color: rgb(255, 230, 0);
-}
-Ende lookcloser*/
-
-
-/*
-.cta img{
-    position: absolute;
-    height: 40%;
-    left: 10%;
-    top: 25%
-}
-*/
-
-
-/*
-.cta-link:nth-child(2){
-    margin-left: 2.6rem;
-}
-.cta-link-darker{
-    color: #0070c9;
-}
-.cta-link-darker:hover{
-    border-bottom-color: rgb(0, 109, 199);
-} 
-*/
-
-/* Ende CTA*/
-
-/*Ende lookcloser*/
-  /*
-  section {
-    height: 100vh;
-    color: black;
-  }
-  
-  section h1 {
-    padding-top: 300px;
-    text-align: center;
-    font-size: 80px;
-  }
-  section h3 {
-    padding-top: 300px;
-    text-align: center;
-    font-size: 80px;
-  }
-  */
-
-/*ende*/
-
     
 
 @media screen and (max-width: 1068px){
@@ -727,8 +453,7 @@ Ende lookcloser*/
     header{
         height: 4.8rem;
         transition: backgroundcubic-bezier(0.32, 0.08, 0.24, 1),
-                    height .56 cubic-bezier(0.32, 0.08, 0.24, 1);
-                    
+                    height cubic-bezier(0.32, 0.08, 0.24, 1);               
     }
 
     #dontshow{
@@ -748,7 +473,7 @@ Ende lookcloser*/
     .secondnav{
         position: fixed;
         top: 48px;
-        z-index: 0;
+        z-index: 1000;
         width: 100%;
         height: 4.8rem;
         background-color: rgba(255, 255, 255, 0.900);
@@ -777,7 +502,7 @@ Ende lookcloser*/
 
     .mobile-menu{
         position: relative;
-        z-index: 1500;
+        z-index: 2500;
         width: 100%;
         height: 100%;
         display: flex;
@@ -824,7 +549,7 @@ Ende lookcloser*/
         width: 1.8rem;
         height: 4.8rem;
         position: relative;
-        z-index: 1500;
+        z-index: 2500;
     }
 
     .nav-link-bag{
@@ -851,7 +576,7 @@ Ende lookcloser*/
         height: 0;
         display: block;
         padding: 10.5rem 5rem;
-        z-index: 1000;
+        z-index: 2000;
         box-sizing: border-box;
         opacity: 0;
         visibility: hidden;
@@ -881,28 +606,9 @@ Ende lookcloser*/
     }
 
     .active .nav-list-larger .nav-item{
-        animation: fadeIn Is ease-in;
+        animation: fadeIn 1s ease-in;
     }
 
-    /*nav 2*/
-    /*
-    .nav-list-cta-larger .nav2-item{
-        width: 100%;
-        justify-content: flex-start;
-        border-bottom: 2px solid rgb(255, 255, 255, .1);
-    }
-    .nav-list-cta-larger .nav2-item:nth-child(9){
-        border-bottom: none;
-    }
-    .active .nav-list-cta-larger .nav2-item{
-        animation: fadeIn Is ease-in;
-    }
-    .nav2-link{
-        font-size: 1.7rem;
-        padding: 0;
-        margin: auto 0;
-    }
-*/
     @keyframes fadeIn {
         from{
             opacity: 0;
@@ -1013,22 +719,9 @@ Ende lookcloser*/
     #desktop{
         display: none;
     }
-
-      .nav2-link{
-        font-size: 1.4rem;
-        color: rgb(0, 0, 0);
-        padding: 0 0rem;
-        transition: opacity .5s;
-        padding-top: 15px;
-        font-weight: 200;
-    }
-    .nav2-link:hover{
-        opacity: .7;
-        color: #006dc7;
-    }
-    
+    /*
     .nav2-cta{
-        background-color: #006dc7; /* Apple Blau */
+        background-color: #006dc7; /* Apple Blau 
         border: none;
         color: white;
         padding: 5px 10px;
@@ -1039,8 +732,8 @@ Ende lookcloser*/
         border-radius: 30px;
     }
     .nav2-cta:hover{
-        background-color: #0e7ad3;
-    }
+        background-color: #006dc7 #006dc767;
+    }*/
     .wrapper-absolute h1{
         font-size: 55px;
         color: rgb(0, 0, 0);
