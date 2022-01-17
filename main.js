@@ -1,8 +1,23 @@
 
 const selectElement = (element) => document.querySelector(element);
 
+let click = false;
+
+function myClickFunction(){
+  if (click == false){
+    document.querySelector('.secondnav').setAttribute('style', 'display: none');
+    click = true;
+  } else if (click == true){
+    document.querySelector('.secondnav').setAttribute('style', 'display: block');
+    click = false;
+  }
+}
+
+document.querySelector(".mobile-menu").addEventListener("click", myClickFunction);
+
 selectElement('.mobile-menu').addEventListener('click',() => {
   selectElement('header').classList.toggle('active');
+  
 });
 
 
@@ -23,11 +38,11 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 22600, /*3400*/
+  duration: 23000, /*3400*/
   triggerElement: intro,
   triggerHook: 0
 })
-  .addIndicators()
+  /*.addIndicators()*/
   .setPin(intro)
   .addTo(controller);
 
@@ -79,7 +94,7 @@ let scenesoursection = new ScrollMagic.Scene({ /*Scene stehen lassen !! wird aus
   triggerElement: soursection,
   triggerHook: 0 /*Wann die Animation anfängt*/
 })
-  .addIndicators()
+  /*.addIndicators()*/
   .setPin(soursection)
   .addTo(controller2);
 

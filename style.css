@@ -165,8 +165,6 @@ a{
     background-color: #0e7ad3;
 }
 
-
-  
   .intro{
     height: 100vh;
   }
@@ -432,14 +430,12 @@ footer table, td{
     border-bottom-color: grey;
     border: solid 0.05em;
 }
-
 .nav-list-name{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.7rem;
     font-weight: 200;
     padding-top: 10px;
 }
-
 .nav-list-cta{
     list-style: none;
     display: flex;
@@ -464,59 +460,47 @@ footer table, td{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 /*iPhone 11 Pro section
-
 .iphone-11-pro{
     background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
     margin-top: 4.4rem;
 }
-
 .title{
     color: #fff;
     text-align: center;
     padding-top: 5.5rem;
-
 }
-
 .title-heading{
     font-size: 5.6rem;
     line-height: 1.07143;
     letter-spacing: -.005rem;
 }
-
 .title-sub-heading{
     font-size: 2.65rem;
     margin-top: .6rem;
     letter-spacing: .008rem;
     font-weight: 400;
 }
-
 .title-price{
     font-size: 1.7rem;
     color: #888;
     margin-top: .68rem;
 }
-
 .cta{
     text-align: center;
     margin-top: 1.8rem;
 }
-
 .cta-link{
     color: #66bbff;
     font-size: 2.1rem;
     display: inline-block;
 }
-
 .cta-link:nth-child(2){
     margin-left: 2.6rem;
 }
-
 .cta-link:hover{
     border-bottom: 2px solid #66bbff;
 }
-
 /*iPhone 11 section*/
 
 
@@ -524,14 +508,10 @@ footer table, td{
 .cta-link-darker{
     color: #0070c9;
 }
-
 .cta-link-darker:hover{
     border-bottom-color: #0070c9;
 }
-
-
 /*Moved to bottom of all section styles to keep consistent styles
-
 .hero{
     height: 69.2rem;
     background-size: auto 73.6rem;
@@ -540,11 +520,9 @@ footer table, td{
     border-top: .6rem solid #fff;
     border-bottom: .6rem solid #fff;
 }
-
 .iphone-11-pro{
     border-top: none;
 }
-
 */
 /*anfang*/
 /*Vorerst gelöscht (Lücken zwischen Boxen)
@@ -555,23 +533,16 @@ footer table, td{
   }
   */
   
-  
-
-  
-
   /*begin soursection
-
   .soursection{
       height: 100vh;
       position: relative;
   }
-
   .soursection video{
       width: 100%;
       height: 100%;
       object-fit: cover;
   }
-
   .soursection h1{
     top: 60%;
     left: 70%;
@@ -579,21 +550,17 @@ footer table, td{
     font-size: 108px;
     color: rgb(0, 0, 0);
   }
-
 ende soursection*/
 
 /* begin mg section
-
 .mgsection{
     height: 100vh;
 }
-
 .mgsection video{
     position: relative;
     width: 100%;
     object-fit: cover;
 }
-
 .mg h1{
     position: relative;
     top: 10%;
@@ -601,9 +568,7 @@ ende soursection*/
     font-size: 508px;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: black;
-
 }
-
 .mg h3{
     position: relative;
     top: 0%;
@@ -612,7 +577,6 @@ ende soursection*/
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: black;
 }
-
 .mg h4{
     position: relative;
     top: 30%;
@@ -621,7 +585,6 @@ ende soursection*/
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: black;
 }
-
 ende mg section*/
 
 /*Anfang nah Himbeere
@@ -644,13 +607,11 @@ ende mg section*/
     line-height: 1.05;
     letter-spacing: -0.05em;
 }
-
 .nahHimbeere img{
     position: relative;
     top: 50%;
     width: 100%;
 }
-
 Ende nah Himbeere*/
 
 /*Anfang lookcloser
@@ -658,14 +619,12 @@ Ende nah Himbeere*/
     height: 100vh;
     background: #000;
 }
-
 .lookcloser img{
     position: relative;
     top: 30%;
     left: 50%;
     height: 80%;
 }
-
 .lookcloser h3{
     position: relative;
     top: -60%;
@@ -674,7 +633,6 @@ Ende nah Himbeere*/
     font-weight: 100;
     color: white;
 }
-
 .lookcloser h4{
     position: relative;
     top: -60%;
@@ -683,7 +641,6 @@ Ende nah Himbeere*/
     font-weight: 100;
     color: rgb(255, 230, 0);
 }
-
 Ende lookcloser*/
 
 
@@ -731,9 +688,7 @@ Ende lookcloser*/
   */
 
 /*ende*/
-@media screen and (max-width: 3000px){
 
-}
     
 
 @media screen and (max-width: 1068px){
@@ -771,7 +726,7 @@ Ende lookcloser*/
 @media screen and (max-width: 767px){
     header{
         height: 4.8rem;
-        transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),
+        transition: .36s cubic-bezier(0.32, 0.08, 0.24, 1),
                     height .56 cubic-bezier(0.32, 0.08, 0.24, 1);
     }
     #dontshow{
@@ -901,11 +856,9 @@ Ende lookcloser*/
         justify-content: flex-start;
         border-bottom: 2px solid rgb(255, 255, 255, .1);
     }
-
     .nav-list-cta-larger .nav2-item:nth-child(9){
         border-bottom: none;
     }
-
     .active .nav-list-cta-larger .nav2-item{
         animation: fadeIn Is ease-in;
     }
@@ -1066,7 +1019,7 @@ Ende lookcloser*/
     color: rgb(0, 0, 0);
     }
       
-        }
+        
 
     .hero{
         height: 50rem;
