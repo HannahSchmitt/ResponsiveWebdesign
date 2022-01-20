@@ -103,8 +103,10 @@ let scenesoursection = new ScrollMagic.Scene({ /*Scene stehen lassen !! wird aus
 //Video Animation
 let handaccelamount = 3.1; /*Am Schluss wird es sich noch ein bisschen bewegen*/
 let handscrollpos = 0; /*handScrollPosition*/
-let handdelay = 0; 
+let handdelay = 1; 
 
+
+/*ab hier löschen*/
 console.log(handscrollpos, handdelay);
 
 scenesoursection.on("update", e => {
@@ -117,8 +119,10 @@ setInterval(() => {
   console.log("startVideo34");
   handdelay += (handscrollpos - handdelay) * handaccelamount; /* handDelay hinzufügen, wenn wir scrollen*/
   console.log(handscrollpos, handdelay);
-
+/*WEG machen!!*/
+if(handvideo){
   handvideo.currentTime = handdelay;
+}
 }, 33.3); /*100 / 30 (Frames) = 33.3 // oder // 1000 / 24 (Frames) = 41,6*/
 
 window.onresize = function() {
